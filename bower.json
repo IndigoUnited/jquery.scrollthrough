@@ -1,0 +1,29 @@
+{
+  "name": "jquery.scrollthrough",
+  "version": "0.1.0",
+  "main": "lib/jquery.scrollthrough.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^1.8||^2.0"
+  },
+  "homepage": "https://github.com/IndigoUnited/jquery.scrollthrough",
+  "authors": [
+    "IndigoUnited",
+    "Bitovi"
+  ],
+  "description": "Makes scrolling pass-through to elements below",
+  "keywords": [
+    "scroll",
+    "mousewheel",
+    "pass-through",
+    "forward",
+    "event",
+    "pointer-events"
+  ]
+}

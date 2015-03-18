@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html><!--<![endif]-->
+    <head>
+        <title>scrollpassthrough demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../lib/jquery.scrollpassthrough.js"></script>
+        <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .scrollable {
+            width: 100%;
+            height: calc(100% - 30px);
+            overflow: auto;
+        }
+
+        .large-container {
+            width: 100%;
+            padding-top: 50px;
+            height: 10000px;
+            background: red;
+            color: white;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+        }
+
+        .ctrls {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 25px;
+            padding: 0 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="scrollable">
+            <div class="large-container">
+                This element is huge..
+            </div>
+        </div>
+
+        <div class="fixed">This element is fixed</div>
+
+        <div class="ctrls">
+            <button class="enable">Enable</button>
+            <button class="disable">Disable</button>
+        </div>
+        <script>
+        /*jshint strict:false*/
+        /*global $*/
+        $(document).ready(function () {
+            var fixed = $('.fixed');
+
+            fixed.scrollpassthrough('.scrollable');
+
+            $('.enable').on('click', function () {
+                fixed.scrollpassthrough('enable');
+            });
+
+            $('.disable').on('click', function () {
+                fixed.scrollpassthrough('disable');
+            });
+        });
+        </script>
+    </body>
+</html>
