@@ -40,7 +40,15 @@ Enables the scrollthrough.
 
 ### .scrollthrough('destroy')
 
-Destroy the plugin, releasing all events and clearing timers.
+Destroys the plugin, releasing all events and clearing timers.
+
+
+## Browser support
+
+- Safari >= 7.0.5
+- Chrome >= 31
+- IE >= 10
+- Firefox >= 17
 
 
 ## How to use

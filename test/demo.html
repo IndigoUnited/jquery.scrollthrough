@@ -2,12 +2,12 @@
 <!--[if lte IE 9]><html class="lt-ie10"><![endif]-->
 <!--[if gt IE 9]><!--><html><!--<![endif]-->
     <head>
-        <title>scrollpassthrough demo</title>
+        <title>scrollthrough demo</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="../lib/jquery.scrollpassthrough.js"></script>
+        <script src="../lib/jquery.scrollthrough.js"></script>
         <style>
         html, body {
             margin: 0;
@@ -69,14 +69,14 @@
         $(document).ready(function () {
             var fixed = $('.fixed');
 
-            fixed.scrollpassthrough('.scrollable');
+            fixed.scrollthrough('.scrollable');
 
             $('.enable').on('click', function () {
-                fixed.scrollpassthrough('enable');
+                fixed.scrollthrough('enable');
             });
 
             $('.disable').on('click', function () {
-                fixed.scrollpassthrough('disable');
+                fixed.scrollthrough('disable');
             });
         });
         </script>

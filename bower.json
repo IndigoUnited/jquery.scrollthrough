@@ -22,6 +22,7 @@
     "scroll",
     "mousewheel",
     "pass-through",
+    "scroll-through",
     "forward",
     "event",
     "pointer-events"
