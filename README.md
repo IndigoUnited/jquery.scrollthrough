@@ -11,7 +11,7 @@ To accomplish this, the plugin uses two different strategies:
 - "Forward" synthetic events with `dispatchEvent` (works in webkit based browsers)
 - Use `pointer-events: none` before a scroll and remove it after a certain delay
 
-The first strategy is preferred as it doesn't cause a `recalculate style`.
+The first strategy is preferred because it doesn't cause `recalculate style` operations.
 
 You can checkout the [demo](http://indigounited.github.io/jquery.scrollthrough/test/demo.html) to see it in action.
 
