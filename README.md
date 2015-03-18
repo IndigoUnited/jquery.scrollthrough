@@ -26,6 +26,17 @@ Note that the element must be above the `scrollElement` for this plugin to work 
 Available options:
 
 `delay`  - The delay in ms used to remove the pointer-events
+`ignore` - A function that lets decide to pass-through in runtime, according to the event.
+
+The `ignore` event is particularly useful if you have an inner scrollable element. In this case, you don't want to pass-through if scrolling on it. Here's how you would do it:
+
+```
+$('.fixed').scrollthrough('.scrollable', {
+    ignore: function (event) {
+        return $(event.target).is('select');
+    }
+})
+```
 
 
 ### .scrollthrough('disable')
